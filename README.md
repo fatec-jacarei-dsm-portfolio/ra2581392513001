@@ -1,2 +1,15 @@
-# ra2581392513001
-Repositório do aluno FELIPE FERREIRA PACHECO.
+# Portfólio de Projetos - Fatec Jacareí  
+### Aluno: Felipe Ferreira Pacheco  
+### Curso: Desenvolvimento de Software Multiplataforma  
+### Turma: 1º Semestre de 2025
+
+---
+
+### Portfólio Online  
+🔗 [Acesse o Portfólio](https://seu-link-aqui.com)  
+🎤 [Pitch de Apresentação (vídeo)](https://link-do-video-aqui.com)  
+
+---
+
+### Sobre o Portfólio  
+Este repositório foi criado para apresentar o portfolio desenvolvido durante o curso de **Desenvolvimento de Software Multiplataforma** na Fatec Jacareí.  
