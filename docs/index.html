@@ -1,11 +1,500 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio - FELIPE FERREIRA PACHECO</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+  <title>Felipe Pacheco - Desenvolvedor Full Stack</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <h1>Bem vindo ao Portfólio de FELIPE FERREIRA PACHECO</h1>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Felipe.dev</div>
+
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">home</a></li>
+        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#skills" class="nav-link">skills</a></li>
+        <li><a href="#projects" class="nav-link">projects</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
+        <!-- Botão idioma -->
+        <div class="lang-dropdown">
+          <button id="lang-toggle" class="lang-btn"><i class="fas fa-globe"></i></button>
+          <ul class="lang-menu" id="lang-menu">
+            <li><a href="#" data-lang="pt"><span class="flag">🇧🇷</span> PT-BR</a></li>
+            <li><a href="#" data-lang="en"><span class="flag">🇺🇸</span> ENG</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Novo botão CV -->
+        <a href="cv.html" target="_blank" class="cv-btn">CV</a>
+
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">console.log("Olá, mundo!")</div>
+        <h1 class="hero-title">Felipe Pacheco</h1>
+        <div class="hero-subtitle">Desenvolvedor Full Stack</div>
+        <p class="hero-description">
+          Meu objetivo é criar soluções robustas e escalaveis, alem de
+          experiencias inovadoras para pessoas ao redor do mundo, atualmente
+          estudo desenvolvimento de software multiplataforma na Fatec jacareí,
+          alem de estudos autodidatas. Estou disposto a ajudar sempre com foco
+          no trabalho em equipe utilizando uma comunicação eficaz e soluções
+          eficientes.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-code"></i>
+            Ver Projetos
+          </a>
+          <a href="https://github.com/FelipePacheco30" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+            </div>
+            <div class="terminal-title">felipe@dev:~$</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command">whoami</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">Felipe Ferreira Pacheco</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command">cat skills.txt</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">HTML, CSS, JavaScript</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">TypeScript, Python</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">PostgreSQL, Linux</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command" id="echo-cmd">echo "Codificando..."</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-output">Codificando...</span>
+            </div>
+            <div class="terminal-line">
+              <span class="terminal-prompt">$</span>
+              <span class="terminal-command typing-animation">npm start</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-number">01.</div>
+        <h2 class="section-title">Sobre Mim</h2>
+        <p class="section-subtitle">
+          Desenvolvedor com foco em entregar eficiencia e escalabilidade
+        </p>
+      </div>
+
+      <!-- Foto + Parágrafos -->
+      <div class="about-content">
+        <div class="about-profile slide-in-left">
+          <div class="profile-image-container">
+            <img src="https://avatars.githubusercontent.com/FelipePacheco30?s=400" alt="Foto de perfil — Felipe Pacheco"
+              class="profile-image" />
+          </div>
+        </div>
+        <div class="about-text slide-in-right">
+          <h3>function desenvolvedor() {</h3>
+          <p>
+            Estudando desenvolvimento Fullstack com foco em habilidades
+            solidas para desenvolvimento Front-end e Back-end, aplicadas em
+            conjunto com soft skills como gestão e trabalho em equipe em
+            projetos reais, utilizando metodologias ageis em diferentes
+            cargos, de desenvolvedor á scrum master.
+          </p>
+          <p>
+            Atualmente professor de inglês na escola de idiomas Wizard, tendo
+            Dominio da lingua inglesa podendo contribuir em equipes e projetos
+            a nivel internacional, alem das habilidades e metodologias
+            adquiridas.
+          </p>
+          <p>
+            <span style="color: var(--color-cyan)">return</span> "Buscando
+            crescimento e desafios";
+          </p>
+          <p style="color: var(--color-purple)">}</p>
+        </div>
+      </div>
+      <!-- fecha about-content -->
+
+      <!-- Cards (fora de about-content, mas dentro da mesma seção) -->
+      <div class="about-extras">
+        <!-- Formação Acadêmica -->
+        <div class="skill-category fade-in">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+              <div class="skill-title">Formação Acadêmica</div>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-name">
+                Desenvolvimento de Software Multiplataforma <br />
+                <br />
+                FATEC Jacareí (2025–2027)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificações -->
+        <div class="skill-category fade-in">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div>
+              <div class="skill-title">Certificações</div>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <a href="https://github.com/FelipePacheco30/certificacoes" target="_blank" class="btn">
+                Ver Certificações
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-number">02.</div>
+        <h2 class="section-title">Habilidades</h2>
+        <p class="section-subtitle">
+          Tecnologias e ferramentas que utilizo no desenvolvimento
+        </p>
+      </div>
+      <div class="skills-container">
+        <div class="skill-category fade-in">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div>
+              <div class="skill-title">Frontend</div>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-name">HTML5</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">CSS3</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">TypeScript</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">React</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">Bootstrap</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-in">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <div>
+              <div class="skill-title">Backend & Database</div>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-name">Python</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">PostgreSQL</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">Node.js</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-in">
+          <div class="skill-header">
+            <div class="skill-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div>
+              <div class="skill-title">Ferramentas & Metodologias</div>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-name">Git</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">GitHub</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">Linux</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">Scrum</div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">Kanban</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-number">03.</div>
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-subtitle">
+          Alguns dos meus trabalhos e contribuições mais importantes
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="assets/images/errorsquad.png" alt="ErrorSquad System" />
+          </div>
+          <h3 class="project-title">Gerenciamento Pedagógico</h3>
+          <p class="project-description">
+            Sistema web para visualização e gerenciamento em tempo real da
+            grade de horarios e disciplinas da Fatec Jacareí.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Git</span>
+            <span class="tech-tag">UX/UI Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ErrorSquad-ABP/ErrorSquad-Front" target="_blank" class="btn github-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://gerenciamento-pedagogico.vercel.app/" target="_blank" class="btn deploy-btn">Deploy</a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="images/projeto2.png" alt="Projeto 2" />
+          </div>
+          <h3 class="project-title">Projeto 2</h3>
+          <p class="project-description">
+            Sistema ETL de gerenciamento e tratamento de dados com Pandas.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/seuusuario/projeto2" target="_blank" class="btn github-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://seuprojeto2.vercel.app" target="_blank" class="btn deploy-btn">Deploy</a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="images/projeto3.png" alt="Projeto 3" />
+          </div>
+          <h3 class="project-title">Projeto 3</h3>
+          <p class="project-description">
+            Breve descrição do projeto 3
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Prisma</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/seuusuario/projeto3" target="_blank" class="btn github-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://seuprojeto3.vercel.app" target="_blank" class="btn deploy-btn">Deploy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="section-number">04.</div>
+        <h2 class="section-title">Vamos Conversar</h2>
+        <p class="section-subtitle">
+          Sempre aberto para discutir novas oportunidades e projetos
+          interessantes
+        </p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info slide-in-left">
+          <h3>// Entre em contato</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <p>github.com/FelipePacheco30</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>felipeferreirapacheco30@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <p>linkedin.com/in/felipe-ferreira-pacheco</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Localização</h4>
+              <p>Brasil</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form slide-in-right">
+          <div class="form-group">
+            <label for="name" class="form-label">Nome</label>
+            <input id="name" name="name" type="text" class="form-input" placeholder="Seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input id="email" name="email" type="email" class="form-input" placeholder="seu@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Assunto</label>
+            <input id="subject" name="subject" type="text" class="form-input" placeholder="Sobre o que quer conversar?"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Mensagem</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Sua mensagem..."
+              required></textarea>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://github.com/FelipePacheco30" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/felipe-ferreira-pacheco" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-text">&copy; 2025 Felipe Pacheco</p>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
