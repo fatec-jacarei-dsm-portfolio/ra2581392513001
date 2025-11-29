@@ -1,226 +1,292 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/cv.css">
-     <script src="js/cv.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/cv.css" />
+    <script src="js/cv.js"></script>
     <title>Felipe Ferreira Pacheco - Desenvolvedor Full-Stack</title>
-</head>
-<body>
-    <a href="#" class="download-button" id="cv-download" onclick="window.print(); return false;">📥 Baixar PDF</a>
-    
+  </head>
+  <body>
+    <a
+      href="#"
+      class="download-button"
+      id="cv-download"
+      onclick="window.print(); return false;"
+      >📥 Baixar PDF</a
+    >
+
     <div class="container">
-        <div class="sidebar">
-            <div class="profile-section">
-                <div class="profile-initial">FP</div>
-                <div class="name" id="cv-name">Felipe Ferreira<br>Pacheco</div>
-                <div class="title" id="cv-title">Desenvolvedor Full-Stack</div>
-            </div>
-            
-            <div class="contact-section">
-                <div class="contact-item">
-                    <span class="contact-icon">📱</span>
-                    <span>(12) 97850-9900</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">✉️</span>
-                    <span>felipeferreirapacheco30@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📍</span>
-                    <span>Jacareí, SP</span>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">🔗</span>
-                    <span>github.com/FelipePacheco30</span>
-                </div>
-            </div>
-            
-            <div class="section-title" id="cv-skills-title">Habilidades Técnicas</div>
-            <div class="skills-grid" id="cv-skills-list">
-                <div class="skill-item">
-                    <div class="skill-name">HTML & CSS</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">React.js</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 20%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">TypeScript</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 40%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">Python</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 30%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">SQL</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 60%"></div>
-                    </div>
-                </div>
-                 <div class="skill-item">
-                    <div class="skill-name">Git & GitHub</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-name">REST APIs</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="width: 10%"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section-title">Idiomas</div>
-            <div class="languages-grid">
-                <div class="language-item">
-                    <span class="language-name">Português</span>
-                    <span class="language-level">Nativo</span>
-                </div>
-                <div class="language-item">
-                    <span class="language-name">Inglês</span>
-                    <span class="language-level">Fluente</span>
-                </div>
-            </div>
-            
-            <div class="section-title">Metodologias</div>
-            <ul class="methodologies-list">
-                <li>Metodologias Ágeis</li>
-                <li>Scrum</li>
-                <li>Clean Code</li>
-                <li>Versionamento Git</li>
-                <li>Responsive Design</li>
-            </ul>
-            
-            <div class="section-title">⚡ Competências</div>
-            <div class="additional-skills">
-                <div class="skill-category">
-                    <div class="skill-category-title">Ensino & Comunicação</div>
-                    <div class="skill-category-content">Didática, oratória, comunicação interpessoal</div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Soft Skills</div>
-                    <div class="skill-category-content">Liderança, trabalho em equipe, adaptabilidade</div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Ferramentas</div>
-                    <div class="skill-category-content">VS Code, Node.js, npm, Figma</div>
-                </div>
-            </div>
+      <div class="sidebar">
+        <div class="profile-section">
+          <div class="profile-initial">FP</div>
+          <div class="name" id="cv-name">Felipe Ferreira<br />Pacheco</div>
+          <div class="title" id="cv-title">Desenvolvedor Full-Stack</div>
         </div>
-        
-        <div class="main-content">
-            <div class="intro-card">
-                <div class="intro-title">Curriculo Profissional</div>
-                <div class="intro-skills">HTML • CSS • React • Python • TypeScript</div>
-                <div class="intro-description" id="cv-summary">
-                    Desenvolvedor Full-Stack iniciante apaixonado por criar soluções digitais e interfaces intuitivas. Atualmente professor de inglês na Wizard Jacareí, combinando habilidades pedagógicas com conhecimentos em desenvolvimento web. Em constante aprendizado com React, Python e TypeScript, buscando crescer na área de tecnologia. Procuro oportunidades para aplicar minha experiência em educação e desenvolver minhas habilidades técnicas em projetos desafiadores.
-                </div>
-            </div>
-            
-            <div class="main-section-title" id="cv-experience-title">Experiência Profissional</div>
-            
-            <div class="timeline-item" id="cv-experience-item">
-                <div class="timeline-header">
-                    <div>
-                        <div class="timeline-title">Professor de Inglês</div>
-                        <div class="timeline-company">Wizard Jacareí</div>
-                    </div>
-                    <div class="timeline-date">Atual</div>
-                </div>
-                <div class="timeline-description">
-                    Responsável pelo ensino de inglês para diferentes níveis e faixas etárias, desenvolvendo planos de aula personalizados e aplicando metodologias inovadoras. Experiência com aulas presenciais e online, utilizando tecnologia educacional para otimizar o aprendizado. Acompanhamento individual do progresso dos estudantes e aplicação de avaliações formativas e somativas.
-                </div>
-            </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <div>
-                        <div class="timeline-title">Desenvolvedor Full-Stack</div>
-                        <div class="timeline-company">Projetos Pessoais</div>
-                    </div>
-                    <div class="timeline-date">2025 - Atual</div>
-                </div>
-                <div class="timeline-description">
-                    Desenvolvedor iniciante focado em projetos pessoais e de estudo utilizando tecnologias como React, Python e TypeScript. Em processo de aprendizado contínuo para criação de interfaces responsivas e desenvolvimento de APIs. Participação em comunidades de desenvolvedores e busca constante por novos conhecimentos e práticas de programação.
-                </div>
-            </div>
-            
-            <div class="main-section-title" id="cv-education-title">Formação Acadêmica</div>
-            
-            <div class="timeline-item" id="cv-education-item">
-                <div class="timeline-header">
-                    <div>
-                        <div class="timeline-title">Tecnólogo em Desenvolvimento de Software Multiplataforma</div>
-                        <div class="timeline-company">FATEC Jacareí</div>
-                    </div>
-                    <div class="timeline-date">Cursando</div>
-                </div>
-                <div class="timeline-description">
-                    Curso superior focado em desenvolvimento multiplataforma, arquitetura de software, metodologias ágeis e tecnologias emergentes. Aprendizado prático em linguagens de programação, desenvolvimento web, mobile e desktop, além de conceitos fundamentais de engenharia de software.
-                </div>
-            </div>
-            
-            <div class="main-section-title">Projetos em Destaque</div>
-            
-            <div class="project-card">
-                <div class="project-title">Error-Squad Frontend</div>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">JAVASCRIPT</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">RESPONSIVE</span>
-                </div>
-                <div class="project-description">
-                    Site de gerenciamento pedagogico, projeto CRUD, com autenticação JWT, backend em javascript, banco de dados em postgreesql, e deploy em nuvem. Site com perfis de convidado e administrador, com foco na alteração, personalização, e atualização de informações pedagogicas em tempo real com web-socket.
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-title">Portfolio Pessoal(em desenvolvimento)</div>
-                <div class="project-tags">
-                    <span class="tag">REACT</span>
-                    <span class="tag">TYPESCRIPT</span>
-                    <span class="tag">ANIMATIONS</span>
-                    <span class="tag">RESPONSIVE</span>
-                </div>
-                <div class="project-description">
-                    Portfolio pessoal moderno em desenvolvimento, apresentando projetos, habilidades e experiência profissional. Utiliza React com TypeScript para uma experiência interativa, com animações suaves, design responsivo e otimização de performance. Interface intuitiva que demonstra capacidades técnicas e criativas em constante evolução.
-                </div>
-            </div>
+
+        <div class="contact-section">
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <span>(12) 97850-9900</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>felipeferreirapacheco30@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Jacareí, SP</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <span>github.com/FelipePacheco30</span>
+          </div>
         </div>
+
+        <div class="section-title" id="cv-skills-title">
+          Habilidades Técnicas
+        </div>
+        <div class="skills-grid" id="cv-skills-list">
+          <div class="skill-item">
+            <div class="skill-name">HTML & CSS</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">React</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">TypeScript</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Python</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Jupyter</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Pandas</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">SQL</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Git & GitHub</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">Docker</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">REST APIs</div>
+          </div>
+        </div>
+
+        <div class="section-title">Idiomas</div>
+        <div class="languages-grid">
+          <div class="language-item">
+            <span class="language-name">Português</span>
+            <span class="language-level">Nativo</span>
+          </div>
+          <div class="language-item">
+            <span class="language-name">Inglês</span>
+            <span class="language-level">Fluente</span>
+          </div>
+        </div>
+
+        <div class="section-title">Metodologias</div>
+        <ul class="methodologies-list">
+          <li>Metodologias Ágeis</li>
+          <li>Scrum</li>
+          <li>Clean Code</li>
+          <li>Versionamento Git</li>
+          <li>Responsive Design</li>
+        </ul>
+
+        <div class="section-title">⚡ Competências</div>
+        <div class="additional-skills">
+          <div class="skill-category">
+            <div class="skill-category-title">Ensino & Comunicação</div>
+            <div class="skill-category-content">
+              Didática, oratória, comunicação interpessoal
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Soft Skills</div>
+            <div class="skill-category-content">
+              Liderança, trabalho em equipe, adaptabilidade
+            </div>
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Ferramentas</div>
+            <div class="skill-category-content">
+              VS Code, Node.js, npm, Figma
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="intro-card">
+          <div class="intro-title">Curriculo Profissional</div>
+          <div class="intro-skills">
+            HTML • CSS • React • Python • TypeScript
+          </div>
+          <div class="intro-description" id="cv-summary">
+            Desenvolvedor Full-Stack iniciante apaixonado por criar soluções
+            digitais e interfaces intuitivas. Atualmente professor de inglês na
+            Wizard Jacareí, combinando habilidades pedagógicas com conhecimentos
+            em desenvolvimento web. Em constante aprendizado com React, Python e
+            TypeScript, buscando crescer na área de tecnologia. Procuro
+            oportunidades para aplicar minha experiência em educação e
+            desenvolver minhas habilidades técnicas em projetos desafiadores.
+          </div>
+        </div>
+
+        <div class="main-section-title" id="cv-experience-title">
+          Experiência Profissional
+        </div>
+
+        <div class="timeline-item" id="cv-experience-item">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">Professor de Inglês</div>
+              <div class="timeline-company">Wizard Jacareí</div>
+            </div>
+            <div class="timeline-date">2025 - Atual</div>
+          </div>
+          <div class="timeline-description">
+            Responsável pelo ensino de inglês para diferentes níveis e faixas
+            etárias, desenvolvendo planos de aula personalizados e aplicando
+            metodologias inovadoras. Experiência com aulas presenciais e online,
+            utilizando tecnologia educacional para otimizar o aprendizado.
+            Acompanhamento individual do progresso dos estudantes e aplicação de
+            avaliações formativas e somativas.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">Desenvolvedor Full-Stack</div>
+              <div class="timeline-company">Projetos Pessoais</div>
+            </div>
+            <div class="timeline-date">2025 - Atual</div>
+          </div>
+          <div class="timeline-description">
+            Desenvolvedor iniciante focado em projetos pessoais e de estudo
+            utilizando tecnologias como React, Python e TypeScript. Em processo
+            de aprendizado contínuo para criação de interfaces responsivas e
+            desenvolvimento de APIs. Participação em comunidades de
+            desenvolvedores e busca constante por novos conhecimentos e práticas
+            de programação.
+          </div>
+        </div>
+
+        <div class="main-section-title" id="cv-education-title">
+          Formação Acadêmica
+        </div>
+
+        <div class="timeline-item" id="cv-education-item">
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-title">
+                Tecnólogo em Desenvolvimento de Software Multiplataforma
+              </div>
+              <div class="timeline-company">FATEC Jacareí</div>
+            </div>
+            <div class="timeline-date">Cursando</div>
+          </div>
+          <div class="timeline-description">
+            Curso superior focado em desenvolvimento multiplataforma,
+            arquitetura de software, metodologias ágeis e tecnologias
+            emergentes. Aprendizado prático em linguagens de programação,
+            desenvolvimento web, mobile e desktop, além de conceitos
+            fundamentais de engenharia de software.
+          </div>
+        </div>
+
+        <div class="main-section-title">Projetos em Destaque</div>
+
+        <div class="project-card">
+          <div class="project-title">Gerenciamento Pedagogico</div>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">JAVASCRIPT</span>
+            <span class="tag">CSS</span>
+            <span class="tag">NODE.JS</span>
+            <span class="tag">POSTGRESQL</span>
+          </div>
+          <div class="project-description">
+            Site de gerenciamento pedagogico, projeto CRUD, com autenticação
+            JWT, backend em javascript, banco de dados em postgreesql, e deploy
+            em nuvem. Site com perfis de convidado e administrador, com foco na
+            alteração, personalização, e atualização de informações pedagogicas
+            em tempo real com web-socket.
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-title">Amazon RE-Flow</div>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">JAVASCRIPT</span>
+            <span class="tag">CSS</span>
+            <span class="tag">PYTHON</span>
+            <span class="tag">JUPYTER</span>
+            <span class="tag">PANDAS</span>
+            <span class="tag">SQLITE</span>
+          </div>
+          <div class="project-description">
+            Dashboard de análise de reviews da Amazon, pipeline ETL + NLP para
+            extração, limpeza, enriquecimento e exportação de dados. Análise de
+            sentimento (VADER) e extração de keywords por review, backend em
+            Python (Flask) com SQLAlchemy/SQLite local, frontend em HTML/JS
+            (Bootstrap + Chart.js). Gera CSVs prontos para Google Sheets /Looker
+            Studio. Foco em automação, reprodutibilidade e visualizações
+            interativas.
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">BDLimnológico - INPE</div>
+          <div class="project-tags">
+            <span class="tag">TYPESCRIPT</span>
+            <span class="tag">REACT</span>
+            <span class="tag">POSTGRESQL</span>
+            <span class="tag">DOCKER</span>
+          </div>
+          <div class="project-description">
+            Sistema web interativo para visualização e análise de dados
+            limnológicos coletados por instituições parceiras do INPE. O projeto
+            integra frontend em React e backend em TypeScript com banco de dados
+            PostgreSQL. Permite filtrar e consultar parâmetros abióticos e
+            bióticos por reservatório, instituição e período de tempo, além de
+            visualizar gráficos, tabelas e mapas interativos. Inclui
+            autenticação, paginação, e filtros combinados com foco em
+            performance, acessibilidade e escalabilidade científica.
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <script>
-        // Função para imprimir/salvar como PDF
-        document.querySelector('.download-button').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.print();
+      // Função para imprimir/salvar como PDF
+      document
+        .querySelector(".download-button")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          window.print();
         });
-        
-        // Animação das barras de progresso das habilidades
-        window.addEventListener('load', function() {
-            const skillBars = document.querySelectorAll('.skill-progress');
-            skillBars.forEach(bar => {
-                const width = bar.style.width;
-                bar.style.width = '0%';
-                setTimeout(() => {
-                    bar.style.width = width;
-                }, 500);
-            });
+
+      // Animação das barras de progresso das habilidades
+      window.addEventListener("load", function () {
+        const skillBars = document.querySelectorAll(".skill-progress");
+        skillBars.forEach((bar) => {
+          const width = bar.style.width;
+          bar.style.width = "0%";
+          setTimeout(() => {
+            bar.style.width = width;
+          }, 500);
         });
+      });
     </script>
-</body>
+  </body>
 </html>
