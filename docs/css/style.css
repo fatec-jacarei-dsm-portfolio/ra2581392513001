@@ -1220,6 +1220,7 @@ body::after {
 }
 .projects-subsection.academic {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 28px;
@@ -1234,13 +1235,17 @@ body::after {
 }
 .projects-subsection.personal {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  gap: 28px;
 }
 .projects-subsection.personal > .project-card {
-  width: 60%;
-  max-width: 820px;
-  margin: 0 auto;
+  width: 45%;
+  max-width: 480px;
+  min-width: 320px;
+  margin: 0;
 }
 @media (max-width: 1000px) {
   .projects-subsection.academic {
