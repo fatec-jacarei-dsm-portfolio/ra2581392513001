@@ -416,10 +416,65 @@
             line-height: 1.5;
         }
         
-        .download-button {
+        .cv-toolbar {
             position: fixed;
-            top: 30px;
-            right: 30px;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 16px 24px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+        }
+
+        .cv-view-toggle {
+            display: flex;
+            gap: 8px;
+        }
+
+        .cv-toggle-btn {
+            padding: 10px 20px;
+            border: 2px solid #8b5cf6;
+            background: transparent;
+            color: #553c9a;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .cv-toggle-btn:hover {
+            background: rgba(139, 92, 246, 0.1);
+        }
+
+        .cv-toggle-btn.active {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            color: white;
+            border-color: transparent;
+        }
+
+        .cv-view {
+            padding-top: 80px;
+        }
+
+        .cv-view.hidden {
+            display: none !important;
+        }
+
+        .cv-pdf-iframe {
+            display: block;
+            width: 100%;
+            min-height: calc(100vh - 80px);
+            border: none;
+        }
+
+        .download-button {
             background: linear-gradient(135deg, #8b5cf6, #7c3aed);
             color: white;
             padding: 12px 24px;
@@ -428,26 +483,26 @@
             font-weight: 600;
             box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
             transition: all 0.3s ease;
-            z-index: 1000;
         }
-        
+
         .download-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 35px rgba(139, 92, 246, 0.5);
         }
-        
+
         @media print {
-            body { 
-                background: white; 
+            body {
+                background: white;
                 font-size: 12px;
             }
-            .container { 
-                box-shadow: none; 
-                margin: 0; 
+            .container {
+                box-shadow: none;
+                margin: 0;
                 max-width: none;
                 min-height: auto;
                 border-radius: 0;
             }
+            .cv-toolbar,
             .download-button {
                 display: none;
             }

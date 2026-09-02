@@ -9,14 +9,25 @@
     <title>Felipe Ferreira Pacheco - Desenvolvedor Full-Stack</title>
   </head>
   <body>
-    <a
-      href="#"
-      class="download-button"
-      id="cv-download"
-      onclick="window.print(); return false;"
-      >📥 Baixar PDF</a
-    >
+    <div class="cv-toolbar">
+      <div class="cv-view-toggle">
+        <button type="button" class="cv-toggle-btn active" data-cv-view="formal" aria-pressed="true">Currículo formal</button>
+        <button type="button" class="cv-toggle-btn" data-cv-view="stylized" aria-pressed="false">Currículo estilizado</button>
+      </div>
+      <a
+        href="assets/pdf/Felipe_Pacheco_Desenvolvedor_Fullstack.pdf"
+        download="Felipe_Pacheco_Desenvolvedor_Fullstack.pdf"
+        class="download-button"
+        id="cv-download"
+        >📥 Baixar PDF</a
+      >
+    </div>
 
+    <div id="cv-formal-container" class="cv-view" aria-hidden="false">
+      <iframe src="assets/pdf/Felipe_Pacheco_Desenvolvedor_Fullstack.pdf" title="Currículo formal (PDF)" class="cv-pdf-iframe"></iframe>
+    </div>
+
+    <div id="cv-stylized-container" class="cv-view hidden" aria-hidden="true">
     <div class="container">
       <div class="sidebar">
         <div class="profile-section">
@@ -266,12 +277,53 @@
         </div>
       </div>
     </div>
+    </div>
 
     <script>
-      // Função para imprimir/salvar como PDF
+      // Alternar entre currículo formal (PDF) e estilizado
+      (function () {
+        const formalContainer = document.getElementById("cv-formal-container");
+        const stylizedContainer = document.getElementById("cv-stylized-container");
+        const downloadBtn = document.getElementById("cv-download");
+        const pdfUrl = "assets/pdf/Felipe_Pacheco_Desenvolvedor_Fullstack.pdf";
+        const pdfDownloadName = "Felipe_Pacheco_Desenvolvedor_Fullstack.pdf";
+
+        document.querySelectorAll(".cv-toggle-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const view = this.getAttribute("data-cv-view");
+            document.querySelectorAll(".cv-toggle-btn").forEach(function (b) {
+              b.classList.remove("active");
+              b.setAttribute("aria-pressed", "false");
+            });
+            this.classList.add("active");
+            this.setAttribute("aria-pressed", "true");
+
+            if (view === "formal") {
+              formalContainer.classList.remove("hidden");
+              formalContainer.setAttribute("aria-hidden", "false");
+              stylizedContainer.classList.add("hidden");
+              stylizedContainer.setAttribute("aria-hidden", "true");
+              downloadBtn.href = pdfUrl;
+              downloadBtn.download = pdfDownloadName;
+              downloadBtn.removeAttribute("onclick");
+            } else {
+              formalContainer.classList.add("hidden");
+              formalContainer.setAttribute("aria-hidden", "true");
+              stylizedContainer.classList.remove("hidden");
+              stylizedContainer.setAttribute("aria-hidden", "false");
+              downloadBtn.href = "#";
+              downloadBtn.removeAttribute("download");
+              downloadBtn.setAttribute("onclick", "window.print(); return false;");
+            }
+          });
+        });
+      })();
+
+      // Função para imprimir/salvar como PDF (apenas no currículo estilizado)
       document
         .querySelector(".download-button")
         .addEventListener("click", function (e) {
+          if (document.getElementById("cv-stylized-container").classList.contains("hidden")) return;
           e.preventDefault();
           window.print();
         });
