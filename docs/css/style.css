@@ -1272,9 +1272,15 @@ body::after {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  flex-direction: row;
   gap: 2rem;
   width: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+}
+.academic-projects-group .project-card {
+  width: 340px;
+  flex: 1 1 340px;
+  max-width: 420px;
 }
 @media (max-width: 900px) {
   .academic-projects-group {

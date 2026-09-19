@@ -43,6 +43,18 @@
       project3Title: "BDLimnológico - INPE",
       project3Desc:
         "Sistema web para consulta e visualização de dados limnológicos, com filtros, mapas e gráficos científicos.",
+      project4Title: "Quantum",
+      project4Desc:
+        "Plataforma de apoio à gestão comercial desenvolvida no contexto acadêmico da FATEC Jacareí em parceria com a 1000 Valle Multimarcas, para registrar e acompanhar oportunidades de negócio e dar visibilidade ao funil de vendas.",
+      project5Title: "4chatting",
+      project5Desc:
+        "Sistema web de chat com suporte automatizado, permitindo comunicação em tempo real entre usuários e plataforma. Possui criação e gerenciamento de contas, histórico pesquisável de mensagens e chatbot com respostas automáticas.",
+      project6Title: "Buenos Drivers",
+      project6Desc:
+        "Aplicativo web mobile-first para gerenciamento de corridas e entregas com atualização de status em tempo real. Permite cadastro e validação de motoristas, acompanhamento de viagens e comunicação integrada na plataforma.",
+      project7Title: "WeWork",
+      project7Desc:
+        "Sistema web para cadastro e gestão de profissionais, reunindo informações de perfil em um fluxo único de registro, consulta e atualização.",
       github: "GitHub",
       deploy: "Ver site",
       sectionContactTitle: "Vamos Conversar",
@@ -115,6 +127,18 @@
       project3Title: "BDLimnological - INPE",
       project3Desc:
         "System for consulting and visualizing limnological data, with filters, maps and scientific charts.",
+      project4Title: "Quantum",
+      project4Desc:
+        "Sales management support platform developed in the academic context of FATEC Jacareí in partnership with 1000 Valle Multimarcas, to register and track business opportunities and give visibility to the sales pipeline.",
+      project5Title: "4chatting",
+      project5Desc:
+        "Web-based chat system with automated support, enabling real-time communication between users and the platform. Features account creation and management, searchable message history, and a chatbot with automated responses.",
+      project6Title: "Buenos Drivers",
+      project6Desc:
+        "Mobile-first web application for managing rides and deliveries with real-time status updates. Allows driver registration and validation, trip tracking, and integrated communication on the platform.",
+      project7Title: "WeWork",
+      project7Desc:
+        "Web system for registering and managing professionals, bringing together profile information in a single registration, lookup and update flow.",
       github: "GitHub",
       deploy: "View site",
       sectionContactTitle: "Let's Talk",
@@ -237,19 +261,41 @@
     if (projectsSubtitle)
       projectsSubtitle.textContent = t.sectionProjectsSubtitle;
 
-    const projectTitles = document.querySelectorAll(".project-title");
-    const projectDescriptions = document.querySelectorAll(
-      ".project-description"
-    );
-    if (projectTitles[0]) projectTitles[0].textContent = t.project1Title;
-    if (projectDescriptions[0])
-      projectDescriptions[0].textContent = t.project1Desc;
-    if (projectTitles[1]) projectTitles[1].textContent = t.project3Title;
-    if (projectDescriptions[1])
-      projectDescriptions[1].textContent = t.project3Desc;
-    if (projectTitles[2]) projectTitles[2].textContent = t.project2Title;
-    if (projectDescriptions[2])
-      projectDescriptions[2].textContent = t.project2Desc;
+    document.querySelectorAll(".project-card").forEach((card) => {
+      const githubLink =
+        card.querySelector(".github-btn")?.getAttribute("href") || "";
+      const titleEl = card.querySelector(".project-title");
+      const descEl = card.querySelector(".project-description");
+      let titleKey = null;
+      let descKey = null;
+      if (githubLink.includes("ErrorSquad-Front")) {
+        titleKey = "project1Title";
+        descKey = "project1Desc";
+      } else if (githubLink.includes("Amazon-RE-Flow")) {
+        titleKey = "project2Title";
+        descKey = "project2Desc";
+      } else if (
+        githubLink.includes("ABP2") ||
+        githubLink.includes("BDLimnologico")
+      ) {
+        titleKey = "project3Title";
+        descKey = "project3Desc";
+      } else if (githubLink.includes("ABP3-Sistema-Gestao-Leads")) {
+        titleKey = "project4Title";
+        descKey = "project4Desc";
+      } else if (githubLink.includes("4Chatting")) {
+        titleKey = "project5Title";
+        descKey = "project5Desc";
+      } else if (githubLink.includes("Buenos-Drivers")) {
+        titleKey = "project6Title";
+        descKey = "project6Desc";
+      } else if (githubLink.includes("WeWork")) {
+        titleKey = "project7Title";
+        descKey = "project7Desc";
+      }
+      if (titleKey && titleEl) titleEl.textContent = t[titleKey];
+      if (descKey && descEl) descEl.textContent = t[descKey];
+    });
 
     document
       .querySelectorAll(".github-btn")
