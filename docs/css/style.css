@@ -653,7 +653,6 @@ section {
   display: flex;
   flex-direction: column;
   min-height: 320px;
-  max-height: 520px;
 }
 .project-card::before {
   content: "";
@@ -782,6 +781,15 @@ section {
 .github-btn {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35));
   border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.deploy-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.deploy-btn.disabled:hover {
+  transform: none;
+  background: initial;
 }
 .container > .projects-grid {
   padding-top: 8px;
@@ -1120,6 +1128,7 @@ body::after {
 }
 .project-image {
   width: 100%;
+  flex-shrink: 0;
   aspect-ratio: 16 / 9;
   border-radius: 8px;
   overflow: hidden;
