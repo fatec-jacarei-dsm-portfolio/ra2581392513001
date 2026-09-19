@@ -1279,9 +1279,9 @@ body::after {
   flex-wrap: wrap;
 }
 .academic-projects-group .project-card {
-  width: 340px;
-  flex: 1 1 340px;
-  max-width: 420px;
+  width: 380px;
+  flex: 1 1 380px;
+  max-width: 480px;
 }
 @media (max-width: 900px) {
   .academic-projects-group {
